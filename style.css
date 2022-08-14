@@ -155,9 +155,14 @@ transform: translateX(-10px);
     }
 }
 
+.socials{
+   margin-top: 20px;
+}
 
-
-
+#social-link{
+    font-size: 35px;
+    color: #f9004d;
+}
 /*  ABOUT ME SECTION STYLING    */
 
 .about-container{
