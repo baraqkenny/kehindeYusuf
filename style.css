@@ -59,14 +59,17 @@ nav ul li a:hover{
     transition: .4s;
 }
 
-#menu{
-    color: #fff;
+.menu-icon{
     display: none;
 }
 
-.navbar2{
+#bars{
+    color: #fff;
+    font-size: 30px;
+}
+
+.side-nav{
     display: none;
-    
 }
 
 
@@ -530,48 +533,50 @@ nav ul li{
     
 }
 
+.menu-icon {
+    display: block;
+}
 
-#menu{
+#bars {
     color: #fff;
+    font-size: 30px;
+   
+}
+
+ .side-nav{
+     display: block;
+     height: 100%;
+     width:0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background: #dd0d4f;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+ }
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color:#ccc;
     display: block;
-    text-align: center;
-    justify-content: center;
+    transition: 0.3s;
+    font-family: 'Kaushan Script', cursive;
+}
+    
+.side-nav a:hover{
+    color: #fff;
 }
 
-.navbar2{
-    justify-content: center;
-    width: 60%;
-    height: 20vh;
-    background: #f9004d;
-    display: none;
-    transform: translateY(80px);
-    transition: 1s;
-}
-
-.list li {
-    display: block;
-    line-height: 30px;
-    text-align: center;
-}
-
-.list li a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 20px;
-        text-transform: capitalize;
-        
-}
-
-.list li a:hover{
-    text-decoration: underline;
-}
-
-.navbar2 p{
-   float: right;
-   margin-right: 5px;
-   font-size: 20px;
-   cursor: pointer;
-   color: #fff;
+.side-nav .btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 }
@@ -681,15 +686,31 @@ nav ul li{
     } 
    }
 
+@media(max-width:350px){
+    .content {
+        margin-left: 20px;
+    }
+}
+
    @media(max-width:340px){
     .content{
-        margin-left: 15px;
+        margin-left: 10px;
        
     } 
    }
 
+    @media(max-width:330px) {
+        .content {
+            margin-left: 2px;
+    
+        }
+    }
+
    @media(max-width:320px){
     
+    .content{
+        margin-left: 30px;
+    }
     .content h4{
         margin-top: 170px;
         font-size: 30px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/164a7b8c8b.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -32,25 +33,25 @@
                
             </ul>
 
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" id="menu" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
-              </svg>
+            <a class="menu-icon" onclick="openSlideMenu()">
+                <i class="fa-solid fa-bars" id="bars"></i>
+            </a>
+          
         </nav>
 
-        <div class="navbar2">
-            <p class="removeBtn">X</p>
-            <ul class="list">
-              <li><a href="index.html">home</a></li>
-              <li><a href="about.html">about</a></li>
-              <li><a href="projects.html">projects</a></li>
-              <li><a href="contact.html">contact</a></li>
-              
-            </ul>
-        </div>
+
+<div class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Project</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+
+
+
+
 
 <!-------- CONTENT ---------------->
 
