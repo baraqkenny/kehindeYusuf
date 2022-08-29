@@ -107,7 +107,7 @@ nav ul li a:hover{
     animation: moveInLeft 3s ease-in-out;
 }
 
-
+   
 .btn{
     margin-top: 50px;
 }
@@ -120,12 +120,14 @@ nav ul li a:hover{
     font-weight: bold;
     border-radius: 100px;
     animation: moveInRight 3s ease-in-out;
+    box-shadow: 10px 10px 17px #f9004d;
 }
 
 .btn a:hover{
     background-color: #f9004d;
     color: #fff;
     transition: 0.5s;
+    box-shadow: 10px 10px 17px #fff;
 }
 
 
