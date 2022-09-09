@@ -660,7 +660,7 @@ nav ul li{
 
 .about-container{
     width: 100%;
-    height: 135vh;
+    height: 170vh;
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(./monitor.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -703,6 +703,30 @@ nav ul li{
             border: 2px solid #3d3d44;
             border-radius: 15px;
         }
+        }
+
+        @media(max-width:401px) {
+        
+            .about-container {
+                width: 100%;
+                height: 200vh;
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./monitor.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+            }
+        }
+
+        @media(max-width:382px) {
+        
+            .about-container {
+                width: 100%;
+                height: 270vh;
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./monitor.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+            }
         }
 
    @media(max-width:380px){
@@ -774,7 +798,7 @@ nav ul li{
 
 .about-container{
     width: 100%;
-    height: 138vh;
+    height: 290vh;
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(./monitor.webp);
     background-repeat: no-repeat;
     background-size: cover;
