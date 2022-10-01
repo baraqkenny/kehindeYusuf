@@ -135,14 +135,14 @@ nav ul li :hover::after{
     font-weight: bold;
     border-radius: 100px;
     animation: moveInRight 3s ease-in-out;
-    box-shadow: 10px 10px 17px #f9004d;
+   
 }
 
 .btn a:hover{
     background-color: #f9004d;                                                                                                                                                                         
     color: #fff;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     transition: 0.5s;
-    box-shadow: 10px 10px 17px #fff;
+   
 }
 
 
@@ -445,7 +445,11 @@ form button{
     border-radius: 30px;
 }
 
-
+form button:hover{ 
+    background: #f9004d;
+    transition: 0.2s;
+    color: #fff;
+}
 
 
 
