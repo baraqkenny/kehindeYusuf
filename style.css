@@ -11,17 +11,24 @@
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(./monitor.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    overflow: hidden;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 8%;
     padding-right: 8%;
+    
 }
+
+
+
+
+
+
 
 .logo{
     text-decoration: none;
@@ -85,6 +92,7 @@ nav ul li :hover::after{
 
 .content{
     margin-left: 200px;
+    
 }
 
 .content h4{
@@ -93,7 +101,9 @@ nav ul li :hover::after{
     letter-spacing: 3px;
     color: #f7f7ff;
     text-transform: uppercase;
-    animation: moveInLeft 3s ease-in-out;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
 .content h1 {
@@ -101,7 +111,11 @@ nav ul li :hover::after{
     font-size:60px;
     text-transform: uppercase;
     color: #fff;
-    animation: moveInRight 3s ease-in-out;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    font-family: 'Anek Devanagari',
+    sans-serif;
 }
 
 .content span{
@@ -114,17 +128,28 @@ nav ul li :hover::after{
     color: #fff;
     line-height: 35px;
     text-transform: uppercase;
-    animation: moveInLeft 3s ease-in-out;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    font-family: 'Ubuntu',
+    sans-serif; 
+    
 }
 .content p{
     color: #fff;
     line-height: 30px;
-    animation: moveInRight 3s ease-in-out;
-    font-family: sans-serif                                                                                                                                                                                                                                                                                                                                                                                   ;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    font-family: 'Ubuntu',
+    sans-serif;                                                                                                                                                                                                                                                                                                                                                                                 ;
 }
    
 .btn{
     margin-top: 50px;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 5s;
+    opacity: 0;
 }
 .button{
     text-decoration: none;
@@ -134,7 +159,6 @@ nav ul li :hover::after{
     color: #000;
     font-weight: bold;
     border-radius: 100px;
-    animation: moveInRight 3s ease-in-out;
    
 }
 
@@ -146,37 +170,23 @@ nav ul li :hover::after{
 }
 
 
-@keyframes moveInLeft{
+@keyframes slideleft {
     0%{
-        opacity:0;
-        transform: translateX(-100px);
-    }
-    80%{
-transform: translateX(10px);
+        transform: translate(100px);
+        opacity: 0;
     }
     100%{
+        transform: translate(0px);
         opacity: 1;
-        transform: translate(0);
     }
 }
 
-
-@keyframes moveInRight{
-    0%{
-        opacity:0;
-        transform: translateX(100px);
-    }
-    80%{
-transform: translateX(-10px);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
 
 .socials{
    margin-top: 20px;
+animation: slideleft 1s linear forwards;
+animation-delay: 6s;
+opacity: 0;
 }
 
 #social-link{
@@ -208,6 +218,9 @@ transform: translateX(-10px);
 
 .aboutme h1{
     text-transform: uppercase;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
 .aboutme p{
@@ -215,6 +228,11 @@ transform: translateX(-10px);
     line-height: 30px;
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Ubuntu',
+    sans-serif;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
 }
 
 .skills{
@@ -223,7 +241,9 @@ transform: translateX(-10px);
 
 .skills h1{
     text-transform: uppercase;
-   
+    animation: slideleft 1s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
 }
 
 .icons{
@@ -236,6 +256,9 @@ transform: translateX(-10px);
 .fa-brands{
     font-size: 150px;
     margin: 30px;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
     transition: .5s;
 }
 
@@ -258,6 +281,20 @@ transform: translateX(-10px);
 
 .fa-react{
     color: rgb(15, 164, 233);
+}
+
+
+
+@keyframes slideleft {
+    0% {
+        transform: translate(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
 }
 
 /*   ABOUT ME STYLING END     */
@@ -319,6 +356,8 @@ transform: translateX(-10px);
     text-decoration: none;
     color: #fff;
     padding-left: 10px;
+    font-family: 'Ubuntu',
+    sans-serif;
 }
 
 .card a:hover{
@@ -340,6 +379,8 @@ transform: translateX(-10px);
     background: red;
     padding: 5px 10px;
     border-radius: 5px;
+    font-family: 'Ubuntu',
+    sans-serif;
 }
 
 
@@ -347,13 +388,17 @@ transform: translateX(-10px);
     background: blue;
     padding: 5px 10px;
     border-radius: 5px;
+    font-family: 'Ubuntu',
+    sans-serif;
 }
 
 
-.java{
+.javascript{
     background: rgb(226, 226, 46);
     padding: 5px 10px;
     border-radius: 5px;
+    font-family: 'Ubuntu',
+    sans-serif;
 }
 
 .card-image2{
@@ -458,7 +503,7 @@ form button:hover{
 
 @media (max-width:939px){
     .card {
-        width: 600px;
+        width: 600px; 
         height: 350px;
         margin: 10px;
         border: 2px solid #3d3d44;
