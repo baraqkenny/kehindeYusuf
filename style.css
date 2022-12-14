@@ -314,7 +314,8 @@ opacity: 0;
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(./monitor.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    font-family: 'Ubuntu',
+            sans-serif;
 }
 
 .project{
@@ -411,7 +412,7 @@ opacity: 0;
 
 
 .card-image3{
-    background: url(./real-estate.jpg) center/cover;
+    background: url(./Screenshot\ 2022-12-14\ 10.34.23\ AM.png) center/cover;
     height: 300px;
     border-radius: 10px 10px 0 0 ;
     transition: 0.5s;
@@ -455,6 +456,8 @@ form{
 ::placeholder{
     font-size: 13px;
     color: #fff;
+    font-family: 'Ubuntu',
+            sans-serif;
 }
 
 form h3{
