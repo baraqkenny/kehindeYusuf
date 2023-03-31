@@ -441,7 +441,7 @@ opacity: 0;
 
 
 .card-image3{
-    background: url(./Screenshot\ 2022-12-24\ 8.02.11\ AM.png) ;
+    background: url(../boomarker-web.png) ;
     height: 300px;
     border-radius: 10px 10px 0 0 ;
     transition: 0.5s;
@@ -449,7 +449,7 @@ opacity: 0;
 }
 
 .card-image4 {
-    background: url(./Screenshot\ 2023-02-04\ 11.58.17\ AM.png)center/cover;
+    background: url(./quiz.png)center/cover;
     height: 300px;
     border-radius: 10px 10px 0 0;
     transition: 0.5s;
