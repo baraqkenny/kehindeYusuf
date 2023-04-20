@@ -287,7 +287,11 @@ opacity: 0;
     color: rgb(15, 164, 233);
 }
 
-
+.tailwind{
+    width: 100px;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 4s;
+}
 
 @keyframes slideleft {
     0% {
@@ -358,17 +362,14 @@ opacity: 0;
 
 
 .card a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #fff;
     padding-left: 10px;
     font-family: 'Ubuntu',
     sans-serif;
 }
 
-.card a:hover{
-    text-decoration: underline;
-    
-}
+
 
 .stack{
     color: #fff;
